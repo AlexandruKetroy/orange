@@ -1,0 +1,40 @@
+POST http://localhost:8080/curs-valutar
+Content-Type: application/json
+Accept: application/json
+
+{
+    "codValuta": "JPY",
+    "rata": 100,
+    "curs": 16.00
+}
+
+
+###
+GET http://localhost:8080/curs-valutar?codValuta=EUR
+Accept: application/json
+
+
+###
+POST http://localhost:8080/schimb-valutar
+Content-Type: application/json
+Accept: application/json
+
+{
+    "codValuta": "EUR",
+    "cursSchimb": 19.70,
+    "sumaPrimita": 100,
+    "sumaEliberata": 1970
+}
+
+###
+
+PUT http://localhost:8080/numerar
+Content-Type: application/json
+Accept: application/json
+
+{
+    "utilizator": "user2",
+    "codValuta": "USD",
+    "suma": 1450,
+    "data": "2020-08-14"
+}
